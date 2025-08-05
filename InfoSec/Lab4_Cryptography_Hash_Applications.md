@@ -10,4 +10,8 @@
 
   Link 2: https://www.cryptool.org/en/cto/
 
-  Link 3: https://cryptoknife.com/
+  Link 3: https://www.browserling.com/tools/
+
+  Link 4: https://xorbin.com/
+
+  Link 5: https://www.devglan.com/
