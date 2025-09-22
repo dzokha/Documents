@@ -32,4 +32,6 @@
 - Chuyển sang nhánh <name_branch>: `git checkout <name_branch>`
 - Giữ bản ở nhánh hiện tại  `git checkout --ours <file_conflict> `
 - Giữ bản ở nhánh merge  `git checkout --theirs <file_conflict> `
+- Xoá remote gốc (repo local không còn trỏ đến GitHub cũ) `git remote remove origin`
+- Thêm remote mới `git remote add origin https://github.com/your-username/repo-moi.git`
 - Tăng giới hạn kích thước buffer khi đẩy (push) dữ liệu qua HTTP lên GitHub: `git config http.postBuffer 52428800`
