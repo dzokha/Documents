@@ -1,4 +1,5 @@
 # Laboratory 3 - INTERNET CONNECTION AND NETWORK QUALITY TESTING
+![Model](Images/model_lab1.png)
 ## 1. Thiết lập Interface phía trong mạng ảo (VMnet1)
 ```
 R3#configure terminal
