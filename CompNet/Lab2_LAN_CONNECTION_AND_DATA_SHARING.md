@@ -14,7 +14,7 @@ R1(config-if)# exit
 R1(config-)#end
 R1#write memory
 ```
-### 3. Cấu hình định tuyến giữa 2 router
+## 3. Cấu hình định tuyến giữa 2 router
 ```
 /* Router 1 */
 R1#configure terminal
