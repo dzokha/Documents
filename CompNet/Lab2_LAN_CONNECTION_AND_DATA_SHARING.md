@@ -3,7 +3,7 @@
 Câu lệnh thiết lập đị chỉ ip
 ```
 #ip 192.168.1.2/24 192.168.1.1
-Hoặc
+/* Hoặc */
 #ip dhcp
 ```
 Câu lệnh thiết lập DNS
