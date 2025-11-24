@@ -8,7 +8,6 @@ Cáp xoắn đôi có hai loại: loại có vỏ bọc STP (Shielded Twisted Pa
 ### 1.3. RJ-45 và RJ-11
 ![Model](Images/RJ-45.png)
 ### 1.4.  Tiêu chuẩn cáp xoắn đôi
-## 📊 Bảng 1. Tiêu chuẩn Cáp xoắn đôi (Twisted Pair Cable Standards)
 
 | Tiêu chuẩn (Category) | Tần số tối đa (MHz) | Tốc độ truyền dẫn tối đa (Mbps/Gbps) | Ứng dụng phổ biến | Lưu ý quan trọng |
 | :--- | :--- | :--- | :--- | :--- |
