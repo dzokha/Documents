@@ -1,5 +1,5 @@
 # Laboratory 2 - LAN CONNECTION AND DATA SHARING
-## 1. Thiết lập IP cho VPC trong GNS3
+## 1. Thiết lập IP cho VPCS trong GNS3
 ```
 # show ip
 # ip 192.168.1.1/24 192.168.1.1
