@@ -5,8 +5,42 @@ Hệ điều hành là phần mềm cho phép người dùng chạy các ứng d
 Hệ điều hành Ubuntu Server là một phiên bản của Hệ điều hành Ubuntu được thiết kế và chế tạo làm xương sống cho Internet. Ubuntu Server mang lại khả năng mở rộng kinh tế và kỹ thuật cho trung tâm dữ liệu của bạn, công khai hoặc riêng tư. Cho dù bạn muốn triển khai đám mây OpenStack, cụm Kubernetes hay cụm kết xuất 50.000 nút, Ubuntu Server đều mang lại hiệu suất mở rộng quy mô có giá trị tốt nhất hiện có.
 
 Download Ubuntu Server :https://ubuntu.com/download/server
+### 1.3 Sử dụng VMware tạo máy ảo và cài Ubuntu Server
+- Chọn File/Mew Virtual Machine
+- Chọn Typical, Next
+- Chọn I will install the operating system later
+- Chọn Microsoft Windows, Chọn Version: Windows Server 2022, Next
+Đặt tên Virtual machine, nên đặt tên dễ nhớ để buổi sau thực hành, Chọn đường dẫn đến ổ D để lưu trữ, vì khi lưu vào ổ C máy khởi động sẻ mất, Next
+Chọn Maximum disk size 60GB, Chọn Split virtual disk into multipe files, Next
+Finish
+Click chuột phải vào tên Virtual Machine vừa đặt bên cửa sổ tay trái, Chọn Settings …
+Click vào CD/DVD (SATA), chọn Use ISO image file và click Brower… để dẫn đến file Windows Server 2022.ISO vừa tải về, Nhấp vào Ok
+Click chuột phải vào tên Virtual Machine vừa tạo và bấm Powrer/Power On Hoặc có thể thực hiện bằng cách click vào nút tam giác màu xanh
+LƯU Ý: 
+- Nếu máy không báo lỗi thì qua B12. 
+- Nếu máy tính báo lỗi “This host supports Intel VT-x, but Intel VT-x is disabled”. 
++ Khởi động lại máy tính,
++ Khi máy tính tắt, và bắt đầu bật màn hình đen thực hiện nhấp F2 liên tục để vào BIOS setting (hoặc phím khác theo hướng dẫn trên màn hình)
++ Sau khi vào BIOS Setting thực hiện các bước sau:
++ Vào Advanced Model/Advanced/CPU Configuration/Intel Virtualization Technology, thay đổi từ “Disabled” thành “Enabled” trong listbox bên tay phải.
++ Sau đó bấm F10 để lưu kết quả thiết lập
++ Bấm Ok để lưu và khởi động Windows
++ Mở VMware và khởi động lại Máy ảo vừa tạo ở B11.
+khi vào màn hình đen, có hiển thị hàng chữ bấm phím bất kỳ để vào Setup, 
+Lưu ý: nếu quên bấm phím bất kỳ thì sẻ vào màn hình màu xanh chọn “EFI VMware virtual CDROM”
+Trog giao diện màn hình Setup bấm Next
+Nhấp chuột vào Install now
+Giao diện hiển thì 4 tuỳ chọn Windows Server các bạn chọn Windows Server 2022 Datacenter Evaluation (Desktop Experience), chọn Next
+Chọn vào Checkbox “I accept the Microsoft….”, Next
+Màn hình Which type of installation do you want?, chọn Custom: Install Micorsoft Server ….
+Lưu ý: Bước này nếu chọn Upgrade thì khi cài máy thật có thể mất dữ liệu 
+tại nước này chon New để tạo ổ đỉa mới, Chọn Apply, Chọn Ok, Chọn Next.
+Lưu ý: Bước này nếu cài máy thật, đã có các phân vùng thì không thực hiện chọn New mà click vào phần vùng chứa hệ điều hành đã cài trước để cài đè lên hoặc xoá dữ liệu trước khi cài lên.
+Đặt mật khẩu phải có ký tự hoa, ký tự thường, ký tự số và ký tự đặc biệt.
+Trên thanh công cụ VMware vào VM/Send Ctrl + Alt + Del
 
-Cài đặt giao diện đồ hoạ người dùng (GUI) trên Ubuntu Server
+```
+### 1.2. Cài đặt giao diện đồ hoạ người dùng (GUI) trên Ubuntu Server
 ```
 $sudo apt-get update && sudo apt upgrade
 $sudo apt-get install slim
