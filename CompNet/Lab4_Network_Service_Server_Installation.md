@@ -19,7 +19,8 @@ Download Ubuntu Server :https://ubuntu.com/download/server
 
 ### 1.2. Cài đặt giao diện đồ hoạ người dùng (GUI) trên Ubuntu Server
 ```
-$sudo apt-get update && sudo apt upgrade
+$sudo apt-get update
+$sudo apt upgrade
 $sudo apt-get install slim
 $sudo apt-get install ubuntu-desktop
 $sudo reboot
