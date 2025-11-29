@@ -5,17 +5,18 @@ Hệ điều hành là phần mềm cho phép người dùng chạy các ứng d
 Hệ điều hành Ubuntu Server là một phiên bản của Hệ điều hành Ubuntu được thiết kế và chế tạo làm xương sống cho Internet. Ubuntu Server mang lại khả năng mở rộng kinh tế và kỹ thuật cho trung tâm dữ liệu của bạn, công khai hoặc riêng tư. Cho dù bạn muốn triển khai đám mây OpenStack, cụm Kubernetes hay cụm kết xuất 50.000 nút, Ubuntu Server đều mang lại hiệu suất mở rộng quy mô có giá trị tốt nhất hiện có.
 
 Download Ubuntu Server :https://ubuntu.com/download/server
-### 1.3 Sử dụng VMware tạo máy ảo và cài Ubuntu Server
+### 1.1. Sử dụng VMware tạo máy ảo và cài Ubuntu Server
 - Chọn File/Mew Virtual Machine
 - Chọn Typical, Next
 - Chọn I will install the operating system later
 - Chọn Microsoft Windows, Chọn Version: Windows Server 2022, Next
-Đặt tên Virtual machine, nên đặt tên dễ nhớ để buổi sau thực hành, Chọn đường dẫn đến ổ D để lưu trữ, vì khi lưu vào ổ C máy khởi động sẻ mất, Next
-Chọn Maximum disk size 60GB, Chọn Split virtual disk into multipe files, Next
-Finish
-Click chuột phải vào tên Virtual Machine vừa đặt bên cửa sổ tay trái, Chọn Settings …
-Click vào CD/DVD (SATA), chọn Use ISO image file và click Brower… để dẫn đến file Windows Server 2022.ISO vừa tải về, Nhấp vào Ok
-Click chuột phải vào tên Virtual Machine vừa tạo và bấm Powrer/Power On Hoặc có thể thực hiện bằng cách click vào nút tam giác màu xanh
+- Đặt tên Virtual machine, nên đặt tên dễ nhớ để buổi sau thực hành, Chọn đường dẫn đến ổ D để lưu trữ, vì khi lưu vào ổ C máy khởi động sẻ mất, Next
+- Chọn Maximum disk size 60GB, Chọn Split virtual disk into multipe files, Next
+- Finish
+- Click chuột phải vào tên Virtual Machine vừa đặt bên cửa sổ tay trái, Chọn Settings …
+- Click vào CD/DVD (SATA), chọn Use ISO image file và click Brower… để dẫn đến file Ubuntu_Server.ISO vừa tải về, Nhấp vào Ok
+- Click chuột phải vào tên Virtual Machine vừa tạo và bấm Powrer/Power On Hoặc có thể thực hiện bằng cách click vào nút tam giác màu xanh
+
 LƯU Ý: 
 - Nếu máy không báo lỗi thì qua B12. 
 - Nếu máy tính báo lỗi “This host supports Intel VT-x, but Intel VT-x is disabled”. 
