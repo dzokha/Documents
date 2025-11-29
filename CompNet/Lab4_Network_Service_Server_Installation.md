@@ -17,30 +17,6 @@ Download Ubuntu Server :https://ubuntu.com/download/server
 - Click vào CD/DVD (SATA), chọn Use ISO image file và click Brower… để dẫn đến file Ubuntu_Server.ISO vừa tải về, Nhấp vào Ok
 - Click chuột phải vào tên Virtual Machine vừa tạo và bấm Powrer/Power On Hoặc có thể thực hiện bằng cách click vào nút tam giác màu xanh
 
-LƯU Ý: 
-- Nếu máy không báo lỗi thì qua B12. 
-- Nếu máy tính báo lỗi “This host supports Intel VT-x, but Intel VT-x is disabled”. 
-+ Khởi động lại máy tính,
-+ Khi máy tính tắt, và bắt đầu bật màn hình đen thực hiện nhấp F2 liên tục để vào BIOS setting (hoặc phím khác theo hướng dẫn trên màn hình)
-+ Sau khi vào BIOS Setting thực hiện các bước sau:
-+ Vào Advanced Model/Advanced/CPU Configuration/Intel Virtualization Technology, thay đổi từ “Disabled” thành “Enabled” trong listbox bên tay phải.
-+ Sau đó bấm F10 để lưu kết quả thiết lập
-+ Bấm Ok để lưu và khởi động Windows
-+ Mở VMware và khởi động lại Máy ảo vừa tạo ở B11.
-khi vào màn hình đen, có hiển thị hàng chữ bấm phím bất kỳ để vào Setup, 
-Lưu ý: nếu quên bấm phím bất kỳ thì sẻ vào màn hình màu xanh chọn “EFI VMware virtual CDROM”
-Trog giao diện màn hình Setup bấm Next
-Nhấp chuột vào Install now
-Giao diện hiển thì 4 tuỳ chọn Windows Server các bạn chọn Windows Server 2022 Datacenter Evaluation (Desktop Experience), chọn Next
-Chọn vào Checkbox “I accept the Microsoft….”, Next
-Màn hình Which type of installation do you want?, chọn Custom: Install Micorsoft Server ….
-Lưu ý: Bước này nếu chọn Upgrade thì khi cài máy thật có thể mất dữ liệu 
-tại nước này chon New để tạo ổ đỉa mới, Chọn Apply, Chọn Ok, Chọn Next.
-Lưu ý: Bước này nếu cài máy thật, đã có các phân vùng thì không thực hiện chọn New mà click vào phần vùng chứa hệ điều hành đã cài trước để cài đè lên hoặc xoá dữ liệu trước khi cài lên.
-Đặt mật khẩu phải có ký tự hoa, ký tự thường, ký tự số và ký tự đặc biệt.
-Trên thanh công cụ VMware vào VM/Send Ctrl + Alt + Del
-
-```
 ### 1.2. Cài đặt giao diện đồ hoạ người dùng (GUI) trên Ubuntu Server
 ```
 $sudo apt-get update && sudo apt upgrade
