@@ -9,7 +9,7 @@ Download Ubuntu Server :https://ubuntu.com/download/server
 - Chọn File/Mew Virtual Machine
 - Chọn Typical, Next
 - Chọn I will install the operating system later
-- Chọn Ubuntu, Chọn Version: Ubuntu, Next
+- Chọn Linux, Chọn Version: Ubuntu 64 bit, Next
 - Đặt tên Virtual machine, nên đặt tên dễ nhớ để buổi sau thực hành, Chọn đường dẫn đến ổ D để lưu trữ, vì khi lưu vào ổ C máy khởi động sẻ mất, Next
 - Chọn Maximum disk size 60GB, Chọn Split virtual disk into multipe files, Next
 - Finish
