@@ -70,6 +70,7 @@ R1#show ip interface brief
 R1#show ip router
 ```
 - Cấu hình IP trên Ubuntu Server: `sudo nano /etc/netplan/01-netcfg.yaml`
+- User/Pass: server/12345
 ```
 network:
   version: 2
