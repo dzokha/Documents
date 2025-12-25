@@ -23,7 +23,7 @@ cscript //nologo ospp.vbs /sethst:kms8.MSGuides.com
 cscript //nologo ospp.vbs /act
 ```
 ## Các Server tham khảo
-Lưu ý là có thể nguy hiểm dính Malware
+Lưu ý là có thể nguy hiểm, có thể dính Malware
 
 - kms.digiboy.ir
 - kms8.MSGuides.com
