@@ -5,6 +5,11 @@
 
 - C:\Program Files (x86)\Microsoft Office\Office14\ospp.vbs
 - C:\Program Files\Microsoft Office\Office14\ospp.vbs
+
+kiểm tra trạng thái bản quyền Office
+'''
+cscript //nologo ospp.vbs /dstatus
+'''
 - 
 cscript //nologo ospp.vbs /unpkey:B9HB6 >nul&
 cscript //nologo ospp.vbs /unpkey:DRTFM >nul&
