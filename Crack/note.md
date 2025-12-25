@@ -1,38 +1,30 @@
 # Key Management Service (KMS) Activator Office
 
-- Microsoft Office 2010 
-- Microsoft Office 365 
+## Thực hiện CMD trong đường dẫn sau với quyền Administrator:
 
-- C:\Program Files (x86)\Microsoft Office\Office14\ospp.vbs
-- C:\Program Files\Microsoft Office\Office14\ospp.vbs
-
-kiểm tra trạng thái bản quyền Office
-'''
+- C:\Program Files (x86)\Microsoft Office\Office14\
+- C:\Program Files\Microsoft Office\Office14\
+## Kiểm tra trạng thái bản quyền Office
+```
 cscript //nologo ospp.vbs /dstatus
-'''
-- 
-cscript //nologo ospp.vbs /unpkey:B9HB6 >nul&
-cscript //nologo ospp.vbs /unpkey:DRTFM >nul&
-cscript //nologo ospp.vbs /unpkey:BTDRB >nul&
-cscript //nologo ospp.vbs /inpkey:2KKDC-67TT9-4XT2F-2MG99-B9HB6 >nul&
-set i=1
-:server
-if %i%==1 set KMS_Sev=kms.digiboy.ir
-if %i%==2 set KMS_Sev=kms8.MSGuides.com
-if %i%==3 set KMS_Sev=kms.chinancce.com
-if %i%==4 goto notsupported
-cscript //nologo ospp.vbs /sethst:%KMS_Sev% >nul&
-echo ************************************************* &
-echo.
-cscript //nologo ospp.vbs /act | find /i "successful" && (echo.&
-echo ************************************************* &
-echo.&choice /n /c YN /m "Do you want to restart your PC now [Y,N]?" & 
-if errorlevel 2 exit) || (echo The connection to the server failed! Trying to connect to another one... & 
-echo Please wait... & 
-echo. & echo. & set /a i+=1 & goto server)
-shutdown.exe /r /t 00
-:notsupported
-echo.&echo ************************************************* &
-echo Incorrect version of MS Office &echo Make sure that you use MS Office 2010/365 version.
-:halt
-pause >nul
+```
+## Gỡ 5 ký tự cuối của các product key đã cài
+```
+cscript //nologo ospp.vbs /unpkey:B9HB6
+```
+## Lệnh CMD làm sạch dấu vết KMS trái phép
+```
+cscript //nologo ospp.vbs /remhst
+```
+## Kích hoạt Server bên ngoài
+```
+cscript //nologo ospp.vbs /inpkey:2KKDC-67TT9-4XT2F-2MG99-B9HB6
+cscript //nologo ospp.vbs /sethst:kms8.MSGuides.com
+cscript //nologo ospp.vbs /act
+```
+## Các Server tham khảo
+Lưu ý là có thể nguy hiểm dính Malware
+
+- kms.digiboy.ir
+- kms8.MSGuides.com
+- kms.chinancce.com
