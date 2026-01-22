@@ -35,3 +35,4 @@
 - Xoá remote gốc (repo local không còn trỏ đến GitHub cũ) `git remote remove origin`
 - Thêm remote mới `git remote add origin https://github.com/your-username/repo-moi.git`
 - Tăng giới hạn kích thước buffer khi đẩy (push) dữ liệu qua HTTP lên GitHub: `git config http.postBuffer 52428800`
+- Xóa toàn bộ chỉ mục (không mất file vật lý, chỉ là để Git "quên" hết đi: `git rm -r --cached .`
