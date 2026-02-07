@@ -1,6 +1,8 @@
 # Computer Network
 ## Lecture slides
-- Slide: [https://drive.google.com/drive/folders/1H3PGNehpM0VeDG9DpSzeEuHtFdQjD0aG](https://drive.google.com/drive/folders/1H3PGNehpM0VeDG9DpSzeEuHtFdQjD0aG)
+- Link chia sẻ Slide bài giảng: [https://drive.google.com/drive/folders/1H3PGNehpM0VeDG9DpSzeEuHtFdQjD0aG](https://drive.google.com/drive/folders/1H3PGNehpM0VeDG9DpSzeEuHtFdQjD0aG)
+- Link hướng dẫn sử dụng github: [https://github.com/dzokha/Documents/blob/main/Github.md](https://github.com/dzokha/Documents/blob/main/Github.md)
+
 ## Practical guide
 ### Lab1 - INTRODUCTION TO NETWORK DEVICES
 https://github.com/dzokha/Documents/blob/main/CompNet/Lab1_Introduction_to_Network_Devices.md
