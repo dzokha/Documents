@@ -1,6 +1,9 @@
 # Network Security
 ## Lecture slides
-- Slide: [https://drive.google.com/drive/folders/1N0MGsk_kAfxQaMgDVVOQ_wgx8DfoIBfy](https://drive.google.com/drive/folders/1N0MGsk_kAfxQaMgDVVOQ_wgx8DfoIBfy)
+
+- Link chia sẻ Slide bài giảng: [https://drive.google.com/drive/folders/1N0MGsk_kAfxQaMgDVVOQ_wgx8DfoIBfy](https://drive.google.com/drive/folders/1N0MGsk_kAfxQaMgDVVOQ_wgx8DfoIBfy)
+- Link hướng dẫn sử dụng github: [https://github.com/dzokha1010/Documents/blob/main/Github.md](https://github.com/dzokha1010/Documents/blob/main/Github.md)
+
 ## Practical guide
 ### Lab1 - SYSLOG, SSH, NTP, PAP, CHAP
 - Hướng dẫn thực hành: [https://github.com/dzokha1010/Documents/blob/main/NetSec/Lab1_SYSLOG_SSH_NTP_PAP_CHAP.md](https://github.com/dzokha1010/Documents/blob/main/NetSec/Lab1_SYSLOG_SSH_NTP_PAP_CHAP.md)
