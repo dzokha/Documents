@@ -19,5 +19,7 @@
 ### Insecure Deserialization
 ### Using Components With Known Vulnerabilities
 ### Insufficient Logging & Monitoring
+## Orther
+- DNS transfer: https://hackertarget.com/zone-transfer/
 ## Reference
 - [https://drive.google.com/drive/folders/1Qrm-RRD5PwUYYmefRrYaRM9N6x3dDcds](https://drive.google.com/drive/folders/1Qrm-RRD5PwUYYmefRrYaRM9N6x3dDcds)
