@@ -1,3 +1,5 @@
+# regedit
+Computer\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
 # Office
 Key Management Service (KMS) Activator Office
 
