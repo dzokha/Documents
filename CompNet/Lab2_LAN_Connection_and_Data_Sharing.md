@@ -17,6 +17,10 @@ Các lệnh cơ bản khác
 #clear ip
 ```
 ## 2. Thiết lập Interface  Router
+Sử dụng Router C7200 để kết nối mạng LAN với nhau. Cách thiết lập:
+1. Tải c7200-adventerprisek9-mz.124-24.T5.image
+2. Vào GNS3 -> Edit -> Reference... -> Dynamips -> IOS Router
+3. Vào chọn New và chọn đường dẫn dến file image vừa tải  thực hiện các lệnh tiếp theo 
 ```
 R1#configure terminal
 R1(config)#interface FastEthernet 0/0
