@@ -4,6 +4,7 @@
 - Link hướng dẫn sử dụng github: [https://github.com/dzokha/Documents/blob/main/Github.md](https://github.com/dzokha/Documents/blob/main/Github.md)
 
 ## Practical guide
+- Link các ứng dụng: [https://drive.google.com/drive/folders/1059GH8QI6ImTdaTP6M73kyW589555qyd?usp=sharing](https://drive.google.com/drive/folders/1059GH8QI6ImTdaTP6M73kyW589555qyd?usp=sharing)
 ### Lab1 - INTRODUCTION TO NETWORK DEVICES
 https://github.com/dzokha/Documents/blob/main/CompNet/Lab1_Introduction_to_Network_Devices.md
 ### Lab2 - LAN CONNECTION AND DATA SHARING
