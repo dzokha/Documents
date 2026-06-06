@@ -104,6 +104,174 @@ ssl_ciphers=HIGH
 
 $sudo systemctl restart vsftpd
 ```
+### Kiểm tra FTP Server và thực hành gửi/nhận tệp
+
+#### a) Kiểm tra trạng thái dịch vụ FTP
+
+Kiểm tra dịch vụ vsftpd đang hoạt động:
+
+```bash
+$sudo systemctl status vsftpd
+```
+
+Kiểm tra cổng FTP đang lắng nghe:
+
+```bash
+$sudo ss -tulnp | grep vsftpd
+```
+
+Kết quả mong đợi hiển thị các cổng:
+
+```text
+21/tcp
+40000-50000/tcp
+```
+
+#### b) Kiểm tra kết nối FTP từ máy khách
+
+Từ máy khách (Client) hoặc chính máy chủ:
+
+```bash
+$ftp 192.168.250.7
+```
+
+Hoặc:
+
+```bash
+$ftp localhost
+```
+
+Đăng nhập bằng tài khoản đã tạo:
+
+```text
+Name: alex
+Password: ********
+```
+
+Sau khi đăng nhập thành công:
+
+```text
+230 Login successful.
+ftp>
+```
+
+#### c) Thực hành tải tệp lên máy chủ FTP
+
+Trên máy khách tạo tệp kiểm tra:
+
+```bash
+$echo "FTP Test File" > test.txt
+```
+
+Trong phiên làm việc FTP:
+
+```bash
+ftp> cd files
+ftp> put test.txt
+ftp> ls
+```
+
+Kết quả mong đợi:
+
+```text
+test.txt
+```
+
+Kiểm tra trên máy chủ:
+
+```bash
+$ls -la /home/alex/ftp/files
+```
+
+#### d) Thực hành tải tệp từ máy chủ FTP về máy khách
+
+Tạo tệp trên máy chủ:
+
+```bash
+$echo "Download Test" > /home/alex/ftp/files/download.txt
+```
+
+Từ máy khách:
+
+```bash
+ftp> cd files
+ftp> get download.txt
+ftp> bye
+```
+
+Kiểm tra tệp đã được tải về:
+
+```bash
+$cat download.txt
+```
+
+Kết quả:
+
+```text
+Download Test
+```
+
+#### e) Kiểm tra FTP bảo mật (FTPS)
+
+Cài đặt ứng dụng FileZilla trên máy khách.
+
+Khai báo kết nối:
+
+```text
+Host: 192.168.250.7
+Protocol: FTP
+Encryption: Require explicit FTP over TLS
+User: alex
+Password: ********
+```
+
+Kết nối thành công sẽ xuất hiện thông báo:
+
+```text
+TLS connection established
+Directory listing successful
+```
+
+Thực hiện kéo/thả một tệp bất kỳ từ máy khách lên thư mục:
+
+```text
+/home/alex/ftp/files
+```
+
+và tải ngược lại từ máy chủ về máy khách.
+
+#### f) Kiểm tra nhật ký hoạt động FTP
+
+Theo dõi các phiên đăng nhập và truyền tệp:
+
+```bash
+$sudo tail -f /var/log/vsftpd.log
+```
+
+Hoặc:
+
+```bash
+$sudo journalctl -u vsftpd -f
+```
+
+Các thông tin cần quan sát:
+
+* Đăng nhập thành công/thất bại.
+* Tải tệp lên máy chủ (UPLOAD).
+* Tải tệp từ máy chủ (DOWNLOAD).
+* Ngắt kết nối người dùng.
+
+#### g) Yêu cầu thực hành
+
+1. Đăng nhập FTP bằng tài khoản `alex`.
+2. Tạo tệp `lab5.txt` trên máy khách.
+3. Tải tệp `lab5.txt` lên thư mục `/home/alex/ftp/files`.
+4. Tạo tệp `report.txt` trên máy chủ.
+5. Tải tệp `report.txt` từ máy chủ về máy khách.
+6. Chụp màn hình quá trình đăng nhập FTP và truyền tệp.
+7. Nộp báo cáo gồm các lệnh đã thực hiện và kết quả kiểm tra.
+
+
 ## 3. Mail Server
 Postfix là một máy chủ email được viết bằng C. Tính năng chính của nó là tốc độ thực thi và tính chất nguồn mở.
 Định cấu hình Máy chủ DNS cho Máy chủ Thư Ubuntu:
