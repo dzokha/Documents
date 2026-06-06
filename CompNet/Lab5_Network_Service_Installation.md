@@ -4,8 +4,12 @@ Framework ứng dụng web là Framework phần mềm được thiết kế đ�
 - Django mã nguồn mở và miễn phí được viết bằng Python.
 - Laravel mã nguồn mở và miễn phí được viết bằng PHP.
 - Spring Boot là một khung Java mã nguồn mở được sử dụng để lập trình các ứng dụng dựa trên Spring. Spring Boot là một tiện ích mở rộng cấu hình theo quy ước dành cho nền tảng Spring Java nhằm giúp giảm thiểu những lo ngại về cấu hình trong khi tạo các ứng dụng dựa trên Spring.
-  
-Kích hoạt giao thức HTTPS với Apache 2
+
+### a) Chọn 1 trong 3 framework trên thực hành tạo ứng dụng web cơ bản
+- Django: https://www.djangoproject.com/
+- Laravel: https://laravel.com/
+- Spring Boot: https://spring.io/
+### b) Kích hoạt giao thức HTTPS với Apache 2
 ```
 $sudo a2enmod ssl
 $sudo systemctl restart apache2
