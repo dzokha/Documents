@@ -318,4 +318,145 @@ $sudo apt install mailutils
 $mail gabriel@test.com
 $mail angelo@test.com
 ```
+### Kiểm tra và thực hành gửi/nhận Email nội bộ
+
+#### a) Cài đặt công cụ gửi và đọc thư
+
+```bash
+$sudo apt install mailutils
+```
+
+#### b) Tạo người dùng nhận thư
+
+```bash
+$sudo useradd -m -G mail -s /bin/bash gabriel
+$sudo passwd gabriel
+
+$sudo useradd -m -G mail -s /bin/bash angelo
+$sudo passwd angelo
+```
+
+#### c) Gửi thư từ tài khoản hiện tại đến người dùng nội bộ
+
+Gửi thư cho người dùng `gabriel`:
+
+```bash
+$mail -s "Test Mail" gabriel@test.com
+```
+
+Nhập nội dung thư:
+
+```text
+Hello Gabriel,
+This is a test email from Ubuntu Mail Server.
+.
+```
+
+Kết thúc thư bằng dấu chấm (`.`) trên một dòng riêng và nhấn Enter.
+
+#### d) Kiểm tra hộp thư của người nhận
+
+Đăng nhập tài khoản nhận thư:
+
+```bash
+$su - gabriel
+```
+
+Mở hộp thư:
+
+```bash
+$mail
+```
+
+Ví dụ kết quả:
+
+```text
+Heirloom Mail version ...
+"/var/mail/gabriel": 1 message
+>N 1 root@test.com ...
+```
+
+Đọc thư số 1:
+
+```bash
+& 1
+```
+
+Thoát chương trình:
+
+```bash
+& q
+```
+
+#### e) Thực hành gửi thư giữa hai người dùng
+
+Đăng nhập bằng tài khoản `gabriel`:
+
+```bash
+$su - gabriel
+```
+
+Gửi thư cho `angelo`:
+
+```bash
+$mail -s "Reply Mail" angelo@test.com
+```
+
+Nội dung:
+
+```text
+Hello Angelo,
+I have received your email.
+.
+```
+
+Đăng nhập tài khoản `angelo` và kiểm tra thư:
+
+```bash
+$su - angelo
+$mail
+```
+
+#### f) Kiểm tra hàng đợi thư (Mail Queue)
+
+```bash
+$mailq
+```
+
+Nếu hệ thống hoạt động bình thường:
+
+```text
+Mail queue is empty
+```
+
+#### g) Kiểm tra nhật ký Mail Server
+
+Theo dõi log của Postfix:
+
+```bash
+$sudo tail -f /var/log/mail.log
+```
+
+Hoặc:
+
+```bash
+$sudo journalctl -u postfix -f
+```
+
+Các thông tin cần quan sát:
+
+* Kết nối SMTP.
+* Thư được gửi thành công.
+* Thư được chuyển vào hộp thư người nhận.
+* Các lỗi gửi hoặc nhận thư.
+
+#### h) Yêu cầu thực hành
+
+1. Tạo hai tài khoản email nội bộ: `gabriel@test.com` và `angelo@test.com`.
+2. Gửi ít nhất 02 email giữa hai tài khoản.
+3. Đọc nội dung email đã nhận.
+4. Kiểm tra Mail Queue.
+5. Theo dõi log của Postfix và ghi nhận thông tin gửi thư thành công.
+6. Chụp màn hình quá trình gửi, nhận và đọc email.
+7. Nộp báo cáo kết quả thực hành.
 
