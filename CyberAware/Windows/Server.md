@@ -69,6 +69,12 @@ Dism /Online /Get-TargetEditions
 ```
 C:\Windows\System32\spp\tokens\skus
 ```
+8. Lấy key OEM channel
+```
+(Get-CimInstance -ClassName SoftwareLicensingService).OA3xOriginalProductKey
+hoặc
+Get-WmiObject -Class SoftwareLicensingService | Select-Object -ExpandProperty OA3xOriginalProductKey
+```
 
 
 # Các Server công khai
