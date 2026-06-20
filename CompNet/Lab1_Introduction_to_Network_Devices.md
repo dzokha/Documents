@@ -18,7 +18,10 @@ Cáp xoắn đôi có hai loại: loại có vỏ bọc STP (Shielded Twisted Pa
 | **CAT 7** | 600 MHz | 10 Gbps; Hỗ trợ lên đến 40 Gbps/100 Gbps (ở khoảng cách rất ngắn) | Trung tâm dữ liệu (Data Center), cáp bảo vệ (Shielded - STP) cao cấp. | Thường yêu cầu đầu nối không phải RJ45 tiêu chuẩn. |
 | **CAT 8** | 2000 MHz | **25 Gbps hoặc 40 Gbps** (ở 30m) | Trung tâm dữ liệu, kết nối máy chủ/thiết bị chuyển mạch hiệu suất cực cao. | Chỉ dành cho kết nối khoảng cách ngắn; là cáp được bảo vệ (Shielded). |
 
-### 1.1. STP
+### 1.5. chuẩn bấm dây mạng
+
+- Chuẩn A (T568A): Thường dùng cho các hệ thống cũ hoặc tiêu chuẩn Mỹ.
+- Chuẩn B (T568B): Đây là "chân ái"! 99% hệ thống mạng gia đình và văn phòng tại Việt Nam đang dùng chuẩn này. Nếu bạn học để tự sửa mạng nhà mình, hãy học thuộc lòng chuẩn B.
 ![Model](Images/rj45.png)
 
 ## 2. Công nghệ không dây
