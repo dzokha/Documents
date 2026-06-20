@@ -30,7 +30,7 @@ Cáp xoắn đôi có hai loại: loại có vỏ bọc STP (Shielded Twisted Pa
 Nghĩa là hai đầu dây bạn bấm GIỐNG HỆT NHAU (cùng là chuẩn B hoặc cùng là A). 👉 Dùng khi nối 2 thiết bị KHÁC LOẠI: Modem/Router -> PC/Laptop; Switch -> Máy tính; Tivi -> Modem.
 #### Cáp Chéo (Crossover)
 Nghĩa là một đầu bạn bấm chuẩn A, đầu kia bấm chuẩn B. 👉 Dùng khi nối 2 thiết bị CÙNG LOẠI: Nối 2 máy tính với nhau (để copy dữ liệu trực tiếp); Nối Switch với Switch; Nối Router với Router.
-### 1.6 Kiềm bấm mạng 
+### 1.6. Kiềm bấm mạng 
 ![Model](Images/kiem.png)
 
 ### 1.7. Chuẩn hoàn thiện
