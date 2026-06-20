@@ -23,6 +23,12 @@ Cáp xoắn đôi có hai loại: loại có vỏ bọc STP (Shielded Twisted Pa
 - Chuẩn A (T568A): Thường dùng cho các hệ thống cũ hoặc tiêu chuẩn Mỹ.
 - Chuẩn B (T568B): Đây là "chân ái"! 99% hệ thống mạng gia đình và văn phòng tại Việt Nam đang dùng chuẩn này. Nếu bạn học để tự sửa mạng nhà mình, hãy học thuộc lòng chuẩn B.
   
+  
 ![Model](Images/rj45.png)
+
+#### Cáp Thẳng (Straight-through)
+Nghĩa là hai đầu dây bạn bấm GIỐNG HỆT NHAU (cùng là chuẩn B hoặc cùng là A). 👉 Dùng khi nối 2 thiết bị KHÁC LOẠI: Modem/Router -> PC/Laptop; Switch -> Máy tính; Tivi -> Modem.
+#### Cáp Chéo (Crossover)
+Nghĩa là một đầu bạn bấm chuẩn A, đầu kia bấm chuẩn B. 👉 Dùng khi nối 2 thiết bị CÙNG LOẠI: Nối 2 máy tính với nhau (để copy dữ liệu trực tiếp); Nối Switch với Switch; Nối Router với Router.
 
 ## 2. Công nghệ không dây
