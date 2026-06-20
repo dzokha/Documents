@@ -22,6 +22,7 @@ Cáp xoắn đôi có hai loại: loại có vỏ bọc STP (Shielded Twisted Pa
 
 - Chuẩn A (T568A): Thường dùng cho các hệ thống cũ hoặc tiêu chuẩn Mỹ.
 - Chuẩn B (T568B): Đây là "chân ái"! 99% hệ thống mạng gia đình và văn phòng tại Việt Nam đang dùng chuẩn này. Nếu bạn học để tự sửa mạng nhà mình, hãy học thuộc lòng chuẩn B.
+  
 ![Model](Images/rj45.png)
 
 ## 2. Công nghệ không dây
